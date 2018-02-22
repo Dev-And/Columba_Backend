@@ -6,11 +6,13 @@
 
 # Ignore bundler config.
 /.bundle
-.idea
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+.idea/
 .byebug_history
+# Ignore encrypted secrets key file.
+config/secrets.yml.key

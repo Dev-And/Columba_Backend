@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
           :recoverable, :rememberable, :trackable, :validatable,
           :omniauthable, :authentication_keys => [:phone]
   include DeviseTokenAuth::Concerns::User
+  include ImageUploader[:image]
   # before_validation :set_uid
   # before_validation :set_provider
   attr_accessor :login
