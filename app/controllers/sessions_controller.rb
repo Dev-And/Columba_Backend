@@ -8,7 +8,7 @@ class SessionsController < DeviseTokenAuth::SessionsController
         phone: @resource.phone,
         name:  @resource.name,
         uid:   @resource.uid,
-        image: @resource.image,
+        image: @resource.image_data,
         access_token: @token,
         client: @client_id
     }
